@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf297705-9e35-4761-99e1-106bb2a3fae7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/application/base/_breakpoints.scss" afterPath="$PROJECT_DIR$/_sass/application/base/_breakpoints.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/application/modules/molecules/_navbar.scss" afterPath="$PROJECT_DIR$/_sass/application/modules/molecules/_navbar.scss" />
-    </list>
+    <list default="true" id="cf297705-9e35-4761-99e1-106bb2a3fae7" name="Default" comment="" />
     <ignored path="westlondoncoders.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/_sass/application/base/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/_includes/footer.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="62" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -524,7 +520,7 @@
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="62" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -556,7 +552,7 @@
     <entry file="file://$PROJECT_DIR$/_sass/application/base/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
