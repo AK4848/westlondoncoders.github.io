@@ -3,6 +3,14 @@ body {
 }
 
 .m-navbar {
+
+  #menu-bars{
+    a:active{
+      border: none;
+    }
+
+  }
+
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -21,10 +29,16 @@ body {
     display: inline-block;
   }
 
+
+
   @media #{$mobile} {
    :not(:first-child) {display: none;}
     .mobile-menu{
       display: inline-block;
+      border:none;
+    }
+    &.responsive{
+      :not(:first-child) {display: inline-block;}
     }
   }
 
