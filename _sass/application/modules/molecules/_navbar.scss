@@ -13,6 +13,21 @@ body {
   color: $color-cream;
   margin-top: -45px;
 
+  .fa-bars{
+    display: none;
+  }
+
+  h1{
+    display: inline-block;
+  }
+
+  @media #{$mobile} {
+   :not(:first-child) {display: none;}
+    .mobile-menu{
+      display: inline-block;
+    }
+  }
+
   @media #{$brk-narrow} {
     padding: 10px;
     margin: -45px 0 0 0;
@@ -26,6 +41,9 @@ body {
   }
 
   @media #{$brk-wide} {
+    .menu-tems{
+      display: inline-block;
+    }
     padding: 15px;
     margin: 0;
     flex-direction: row;
