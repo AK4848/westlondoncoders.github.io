@@ -15,14 +15,14 @@
     font-family: $banner-font;
   }
   h2 {
-    font-size: 20px;
+    font-size: 1em;
   }
 }
 
 .m-banner--with-image {
   h1 {
-    font-size: 40px;
-    padding-top: 30px;
+    font-size: 2em;
+    
   }
   @media #{$brk-wide} {
     padding: 50px 0;
