@@ -1,15 +1,25 @@
 .m-banner {
-  height: 100vh;
   display: flex;
+    height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 15px;
-  @media #{$brk-wide} {
+
+    @media #{$brk-narrow} {
+    
     padding: 0;
-  }
+        
+    }
+    @media #{$brk-wide} {
+    height: 100vh;
+    padding: 0;
+    }
   img {
-    margin-top: 100px;
+    margin-top: 10px;
+      @media #{$brk-narrow}{
+          margin-top: 100%;
+    }
   }
   h1 {
     font-family: $banner-font;
@@ -25,6 +35,7 @@
     
   }
   @media #{$brk-wide} {
+      
     padding: 50px 0;
   }
 }
