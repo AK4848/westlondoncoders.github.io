@@ -37,3 +37,55 @@
     background: lighten($color-pink, 10%);
   }
 }
+
+.animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button {
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 5px;
+	font-family: $nav-font, cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+  &:active {
+  	transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+  	border-bottom: 1px solid;
+  }
+}
+
+.pink {
+	background-color: $color-pink;
+	border-bottom: 5px solid #B42856;
+  color: $color-yellow;
+}
+
+.cream {
+	background-color: $color-cream;
+	border-bottom: 5px solid #E8E8E8;
+  color: $color-blue;
+}
+
+.green {
+	background-color: $color-green;
+	border-bottom: 5px solid #669644;
+  color: $color-cream;
+}
+
+.purple {
+	background-color: $color-purple;
+	border-bottom: 5px solid #6A5B7A;
+  color: $color-yellow;
+}
+
+.olive {
+	background-color: $color-olive;
+	border-bottom: 5px solid #87937B;
+  color: $color-cream;
+}
