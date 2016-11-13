@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 15px;
+  padding: 5px 5px;
 
     @media #{$brk-narrow} {
-    
+
     padding: 0;
-        
+
     }
     @media #{$brk-wide} {
     height: 100vh;
@@ -23,6 +23,7 @@
   }
   h1 {
     font-family: $banner-font;
+    text-align: center;
   }
   h2 {
     font-size: 1em;
@@ -32,10 +33,10 @@
 .m-banner--with-image {
   h1 {
     font-size: 2em;
-    
+    margin-top: 60px;
   }
   @media #{$brk-wide} {
-      
+
     padding: 50px 0;
   }
 }
@@ -43,15 +44,102 @@
 .m-banner--yellow {
   background: $color-yellow;
   color: $color-blue;
+  a {
+    color: $color-blue;
+  }
+  a:hover {
+    border-bottom: 3px solid $color-blue;
+  }
+  li{
+    color: inherit;
+  }
 }
+
+.m-banner--cream {
+  background: $color-cream;
+  color: $color-blue;
+  a {
+    color: $color-blue;
+  }
+  a:hover {
+    border-bottom: 3px solid $color-blue;
+  }
+  li{
+    color: inherit;
+  }
+}
+
+.m-banner--purple {
+  background: $color-purple;
+  color: $color-yellow;
+  a {
+    color: $color-yellow;
+  }
+  a:hover {
+    border-bottom: 3px solid $color-yellow;
+  }
+  li{
+    color: inherit;
+  }
+}
+
+.m-banner--green {
+  background: $color-green;
+  color: $color-cream;
+  a {
+    color: $color-cream;
+  }
+  a:hover {
+    border-bottom: 3px solid $color-cream;
+  }
+  li{
+    color: inherit;
+  }
+}
+
+.m-banner--olive {
+  background: $color-olive;
+  color: $color-cream;
+  a {
+    color: $color-cream;
+  }
+  a:hover {
+    border-bottom: 3px solid $color-cream;
+  }
+  li{
+    color: inherit;
+  }
+}
+
 
 .m-banner--pink {
   background: $color-pink;
   color: $color-yellow;
   a {
-    color: $color-blue;
+    color: $color-yellow;
   }
   a:hover {
     border-bottom: 3px solid $color-yellow;
   }
+  li{
+    color: inherit;
+  }
+}
+
+.m-banner2 {
+  height: 100vh;
+  padding: 15px 25px;
+  h1 {
+    text-align: left;
+    margin-left: 20px;
+}
+}
+
+#special{
+  font-family: $body-font !important;
+  margin-bottom: 75px;
+}
+
+.m-banner__buttons {
+  margin-top: -60px;
 }
