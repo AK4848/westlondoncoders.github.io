@@ -63,16 +63,3 @@ a:hover {
 ul {
   margin: 2em 0;
 }
-
-li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-ul li:before {
-  content: '\f006';
-  font-family: 'FontAwesome';
-  float: left;
-  margin-left: -1.5em;
-  color: $color-pink;
-}

@@ -13,29 +13,13 @@
 @import "application/base/layout";
 
 // Atoms
-// @import "application/modules/atoms/social-icons";
 @import "application/modules/atoms/section";
 @import "application/modules/atoms/content";
-@import "application/modules/atoms/share-page";
-
-
 
 // Modules
-// @import "application/modules/molecules/steve-banner";
 @import "application/modules/molecules/navbar";
-@import "application/modules/molecules/footer";
-// @import "application/modules/molecules/gallery";
 @import "application/modules/molecules/banner";
-@import "application/modules/molecules/post-list";
-@import "application/modules/organisms/post";
-@import "application/modules/molecules/members-list";
-// @import "application/modules/organisms/blog";
-
-
-
-// Organisms
-
+@import "application/modules/molecules/hero";
 
 // Utilities
-// @import "application/utilities/animations/animations";
 @import "application/utilities/utilities";
