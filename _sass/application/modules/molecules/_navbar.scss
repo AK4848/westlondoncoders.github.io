@@ -5,50 +5,38 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: $color-blue;
-  color: $color-cream;
+  background: white;
+  color: black;
 
   @media #{$brk-narrow} {
-    padding: 10px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
-    
-    width: 100%;
-    box-shadow: 0 8px 6px -6px #999;
   }
 
   @media #{$brk-wide} {
-    padding: 20px;
-    margin: 0;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: $color-cream;
-    height: 90px;
-    width: 100%;
-    background: $color-blue;
-    box-shadow: 0 8px 6px -6px #999;
   }
 
   .pink-hover {
     border: none;
   }
+
   a.pink-hover:hover {
-      color: $color-yellow;
-      transition: all 0.6s ease;
+      color: $color-pink;
+      transition: all 0.3s ease;
       border: none;
     }
+
   h1 {
     align-self: center;
     font-family: $logo-font;
     font-size: 1.5em;
-    line-height: 1;
     padding: 0;
-    margin: 20px;
-    letter-spacing: -3px;
-    word-spacing: -12px;
+    margin: 8px;
 
     @media #{$brk-narrow} {
       font-size: 1.5em;
@@ -77,9 +65,9 @@
 
   }
   a {
-    color: $color-cream;
+    color: black;
     text-align: left;
-    border-bottom: 3px solid $color-blue;
+    border-bottom: 3px solid white;
     margin-right: 20px;
 
     @media #{$brk-narrow} {
@@ -93,7 +81,7 @@
   i {
     color: $color-pink;
     @media #{$brk-narrow} {
-      color: $color-yellow;
+      color: black;
     }
   }
 }
