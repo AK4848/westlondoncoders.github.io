@@ -8,7 +8,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media #{$brk-narrow} {
+  @media #{$from-small} {
     max-width: 40em;
   }
 }
