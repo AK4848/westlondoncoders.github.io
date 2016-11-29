@@ -21,8 +21,6 @@
   @media #{$from-medium} {
     a:hover {
       @include link-fade;
-      border: 0;
-      color: $color-pink;
     }
   }
 }

@@ -4,12 +4,11 @@ $nav-font: 'Roboto', sans-serif;
 $banner-font: 'Roboto', sans-serif;
 
 @mixin link-underline {
-
   border-bottom: 3px solid $color-pink;
 }
 
 body {
-  line-height: 1;
+  line-height: 1.25;
 }
 
 ul {
