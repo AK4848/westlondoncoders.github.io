@@ -1,15 +1,13 @@
 ---
 layout: default
-title: home
+title: Blog
+permalink: /blog/
 ---
 
-.m-hero
-  %h1.m-hero-header.m-hero-header--home What do you want to talk about?
-
 %section.a-section
-  .a-content.a-content-top--spacious
+  .a-content
     .m-blog
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts %}
       .m-blog__post
         %a.m-blog__title{href: "{{ post.url | prepend: site.baseurl }}"}
           %h1 {{ post.title }}
