@@ -1,87 +1,71 @@
+// Bar itself, logo and nav items are its children
+
 .m-navbar {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  justify-content: center;
+
+  a {
+    color: $color-dark-grey;
+    padding-bottom: 2px;
+  }
+
+  @media #{$from-medium} {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.m-navbar__logo {
+  text-align: center;
+
+  @media #{$from-medium} {
+    a:hover {
+      @include link-fade;
+      border: 0;
+      color: $color-pink;
+    }
+  }
+}
+
+.m-navbar__nav {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  background: white;
-  color: black;
 
-  @media #{$brk-narrow} {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  @media #{$brk-wide} {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: $color-cream;
-  }
-
-  .pink-hover {
-    border: none;
-  }
-
-  a.pink-hover:hover {
-      color: $color-pink;
-      transition: all 0.3s ease;
-      border: none;
-    }
-
-  h1 {
-    align-self: center;
-    font-family: $logo-font;
-    font-size: 1.5em;
-    padding: 0;
-    margin: 8px;
-
-    @media #{$brk-narrow} {
-      font-size: 1.5em;
-    }
-
-    @media #{$brk-wide} {
-      font-size: 2em;
-    }
-
-  }
+// Reset h2 margins to padding so the border wraps around space, not just h2
+// content
 
   h2 {
-    font-family: $nav-font;
-    font-size: 1.2em;
-    padding: 0;
     margin: 0;
-    @media #{$brk-narrow} {
-      font-size: 1em;
-      margin-right: 10px;
-    }
-
-    @media #{$brk-wide} {
-      font-size: 1.4em;
-      margin-bottom: -8px;
-    }
-
-  }
-  a {
-    color: black;
-    text-align: left;
-    border-bottom: 3px solid white;
-    margin-right: 20px;
-
-    @media #{$brk-narrow} {
-      text-align: center;
-    }
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
-  a:hover {
-    border-bottom: 3px solid $color-pink;
-  }
-  i {
-    color: $color-pink;
-    @media #{$brk-narrow} {
-      color: black;
+  @media #{$to-medium} {
+
+    a:hover {
+      @include link-fade;
+      border: 0;
+      color: $color-pink;
     }
+
+    h2:hover {
+      @include link-fade;
+      color: $color-pink;
+    }
+    h2 {
+      border-top: 1px solid $color-light-grey;
+      width: 100%;
+    }
+    h2:last-child {
+      border-bottom: 1px solid $color-light-grey;
+    }
+  }
+
+  @media #{$from-medium} {
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
