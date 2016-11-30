@@ -3,6 +3,7 @@
 .m-navbar {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   a {
     font-family: $header-font;
@@ -18,6 +19,7 @@
 
 .m-navbar__logo {
   text-align: center;
+  margin: 0;
 
   @media #{$from-medium} {
     a:hover {
