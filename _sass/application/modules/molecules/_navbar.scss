@@ -1,99 +1,73 @@
+// Bar itself, logo and nav items are its children
+
 .m-navbar {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  justify-content: center;
+  align-items: center;
+
+  a {
+    font-family: $header-font;
+    color: $color-dark-grey;
+    padding-bottom: 2px;
+  }
+
+  @media #{$from-medium} {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.m-navbar__logo {
+  text-align: center;
+  margin: 20px 0;
+
+  @media #{$from-medium} {
+    margin: 0;
+    a:hover {
+      @include link-fade;
+    }
+  }
+}
+
+.m-navbar__nav {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  background: $color-blue;
-  color: $color-cream;
 
-  @media #{$brk-narrow} {
-    padding: 10px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 70px;
-    
-    width: 100%;
-    box-shadow: 0 8px 6px -6px #999;
-  }
-
-  @media #{$brk-wide} {
-    padding: 20px;
-    margin: 0;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: $color-cream;
-    height: 90px;
-    width: 100%;
-    background: $color-blue;
-    box-shadow: 0 8px 6px -6px #999;
-  }
-
-  .pink-hover {
-    border: none;
-  }
-  a.pink-hover:hover {
-      color: $color-yellow;
-      transition: all 0.6s ease;
-      border: none;
-    }
-  h1 {
-    align-self: center;
-    font-family: $logo-font;
-    font-size: 1.5em;
-    line-height: 1;
-    padding: 0;
-    margin: 20px;
-    letter-spacing: -3px;
-    word-spacing: -12px;
-
-    @media #{$brk-narrow} {
-      font-size: 1.5em;
-    }
-
-    @media #{$brk-wide} {
-      font-size: 2em;
-    }
-
-  }
+// Reset h2 margins to padding so the border wraps around space, not just h2
+// content
 
   h2 {
-    font-family: $nav-font;
-    font-size: 1.2em;
-    padding: 0;
     margin: 0;
-    @media #{$brk-narrow} {
-      font-size: 1em;
-      margin-right: 10px;
-    }
-
-    @media #{$brk-wide} {
-      font-size: 1.4em;
-      margin-bottom: -8px;
-    }
-
-  }
-  a {
-    color: $color-cream;
-    text-align: left;
-    border-bottom: 3px solid $color-blue;
-    margin-right: 20px;
-
-    @media #{$brk-narrow} {
-      text-align: center;
-    }
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
-  a:hover {
-    border-bottom: 3px solid $color-pink;
-  }
-  i {
-    color: $color-pink;
-    @media #{$brk-narrow} {
-      color: $color-yellow;
+  @media #{$to-medium} {
+
+    a:hover {
+      @include link-fade;
+      border: 0;
+      color: $color-pink;
     }
+
+    h2:hover {
+      @include link-fade;
+      color: $color-pink;
+    }
+    h2 {
+      border-top: 1px solid $color-light-grey;
+      width: 100vw;
+    }
+    h2:last-child {
+      border-bottom: 1px solid $color-light-grey;
+    }
+  }
+
+  @media #{$from-medium} {
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

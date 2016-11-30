@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+%section.a-section
+  .a-content
+    .m-blog
+      {% for post in site.posts %}
+      .m-blog__post
+        %a.m-blog__title{href: "{{ post.url | prepend: site.baseurl }}"}
+          %h1 {{ post.title }}
+        .m-blog__meta
+          %span.m-blog__date
+            %i.fa.fa-clock-o
+            {{ post.date | date: "%b %-d, %Y" }}
+          %span.m-blog__author
+            %i.fa.fa-user-circle-o
+            {{ post.author }}
+        .m-blog__excerpt
+          {{ post.excerpt }}
+      {% endfor %}

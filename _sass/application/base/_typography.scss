@@ -1,48 +1,23 @@
-// Fonts
+$header-font: 'Ubuntu', sans-serif;
+$body-font: 'Montserrat', sans-serif;
 
-$body-font: 'Josefin Sans', sans-serif;
-$logo-font: 'Cutive Mono', monospace;
-$nav-font: 'Special Elite', cursive;
-$banner-font: 'Finger Paint', cursive;
+@mixin link-underline {
+  border-bottom: 3px solid $color-pink;
+}
 
 body {
-  line-height: 1.8;
+  line-height: 1.25;
 }
 
 h1,
 h2,
-h3,
-h4,
-a,
-p,
-ul,
-li {
-  margin: 0;
-}
-
-h1 {
-  font-family: $logo-font;
-  font-size: 3em;
-}
-
-h2 {
-  font-family: $nav-font;
-  font-size: 2.5em;
-}
-
 h3 {
-  font-size: 1.5em;
-  opacity: .6;
+  font-family: $header-font;
 }
 
-h3,
-a,
 p,
-ul,
-li {
+a {
   font-family: $body-font;
-  font-size: 1.2em;
-  line-height: 1.6;
 }
 
 ul {
@@ -57,22 +32,5 @@ a {
 }
 
 a:hover {
-  border-bottom: 3px solid $color-pink;
-}
-
-ul {
-  margin: 2em 0;
-}
-
-li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-ul li:before {
-  content: '\f006';
-  font-family: 'FontAwesome';
-  float: left;
-  margin-left: -1.5em;
-  color: $color-pink;
+  @include link-underline;
 }

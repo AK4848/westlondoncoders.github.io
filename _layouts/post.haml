@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+%section.a-section
+  .a-content.a-content-top--spacious
+    .m-post
+      %h1
+        {{ page.title }}
+
+      .m-post__meta
+        %span
+          %i.fa.fa-clock-o
+          {{ page.date | date: "%b %-d, %Y" }}
+        %span
+          %i.fa.fa-user-circle-o
+          {{ page.author }}
+
+      .m-post__content
+        {{ content }}
+
+      #disqus_thread
+        :javascript
+          (function() {  // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+
+              s.src = '//westlondoncoders.disqus.com/embed.js';
+
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+        %noscript
+          Please enable JavaScript to view the
+          %a{:href => "https://disqus.com/?ref_noscript", :rel => "nofollow"} comments powered by Disqus.
+
+        %script#dsq-count-scr{:async => "", :src => "//EXAMPLE.disqus.com/count.js"}

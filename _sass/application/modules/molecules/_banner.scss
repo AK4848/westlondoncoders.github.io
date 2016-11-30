@@ -1,28 +1,28 @@
 .m-banner {
   display: flex;
-    height: 100vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5px 5px;
 
-    @media #{$brk-narrow} {
+    @media #{$from-small} {
 
     padding: 0;
 
     }
-    @media #{$brk-wide} {
+    @media #{$from-large} {
     height: 100vh;
     padding: 0;
     }
   img {
     margin-top: 10px;
-      @media #{$brk-narrow}{
+      @media #{$from-small}{
           margin-top: 100%;
     }
   }
   h1 {
-    font-family: $banner-font;
+    font-family: $header-font;
     text-align: center;
   }
   h2 {
@@ -33,9 +33,9 @@
 .m-banner--with-image {
   h1 {
     font-size: 2em;
-
+    margin-top: 60px;
   }
-  @media #{$brk-wide} {
+  @media #{$from-large} {
 
     padding: 50px 0;
   }
@@ -124,15 +124,6 @@
   li{
     color: inherit;
   }
-}
-
-.m-banner2 {
-  height: 100vh;
-  padding: 15px 25px;
-  h1 {
-    text-align: left;
-    margin-left: 20px;
-}
 }
 
 #special{

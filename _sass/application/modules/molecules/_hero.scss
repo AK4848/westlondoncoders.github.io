@@ -1,0 +1,73 @@
+// Hero
+
+.m-hero {
+  height: 100vh;
+
+  background: url("/img/heroes/small/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media #{$from-small} {
+    background: url("/img/heroes/medium/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  @media #{$from-large} {
+    background: url("/img/heroes/large/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.m-hero--members {
+  height: 85vh;
+
+  background: url("/img/heroes/small/members.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media #{$from-small} {
+    background: url("/img/heroes/medium/members.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  @media #{$from-large} {
+    background: url("/img/heroes/large/members.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+// The reusable parts of the header class. Create a modifier if using on other
+// pages (as below for the home page)
+
+.m-hero-header {
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0 5%;
+  font-size: 1.5em;
+
+  @media #{$from-medium} {
+    font-size: 2.5em;
+    margin-right: 30%;
+  }
+}
+
+// Home page modifier - this sets the position of the header, which is unique
+// to the home page and won't be the same on other page
+
+.m-hero-header--home {
+  position: relative;
+  top: 90px;
+}
+
+.m-hero-header--members {
+  position: relative;
+  top: 50px;
+  background-color: $color-dark-grey;
+  color: white;
+}
