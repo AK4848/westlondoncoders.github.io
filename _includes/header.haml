@@ -1,0 +1,21 @@
+%header
+  .m-navbar
+    %h1.m-navbar__logo
+      %a{href: '/'}
+        %i.fa.fa-code
+        West London Coders
+    .m-navbar__nav
+      %h2
+        %a{href: "/members"}
+          %i.fa.fa-user-circle-o{"aria-hidden" => "true"}
+          Members
+      %h2
+        %a{href: "/blog"}
+          %i.fa.fa-newspaper-o{"aria-hidden" => "true"}
+          Blog
+      %h2
+        %a{href: "/learn"}
+          %i.fa.fa-graduation-cap{"aria-hidden" => "true"}
+          Learn
+  .a-social-links--right
+    {% haml social_links.haml %}
