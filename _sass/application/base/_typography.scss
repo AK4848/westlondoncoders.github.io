@@ -1,7 +1,5 @@
-$body-font: 'Roboto', sans-serif;
-$logo-font: 'Roboto', sans-serif;
-$nav-font: 'Roboto', sans-serif;
-$banner-font: 'Roboto', sans-serif;
+$header-font: 'Ubuntu', sans-serif;
+$body-font: 'Montserrat', sans-serif;
 
 @mixin link-underline {
   border-bottom: 3px solid $color-pink;
@@ -9,6 +7,17 @@ $banner-font: 'Roboto', sans-serif;
 
 body {
   line-height: 1.25;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header-font;
+}
+
+p,
+a {
+  font-family: $body-font;
 }
 
 ul {
