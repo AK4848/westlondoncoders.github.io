@@ -1,6 +1,6 @@
 .m-banner {
   display: flex;
-    height: 100vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -126,20 +126,7 @@
   }
 }
 
-.m-banner2 {
-  height: 100vh;
-  padding: 15px 25px;
-  h1 {
-    text-align: left;
-    margin-left: 20px;
-}
-}
-
 #special{
   font-family: $body-font !important;
   margin-bottom: 75px;
-}
-
-.m-banner__buttons {
-  margin-top: -60px;
 }
