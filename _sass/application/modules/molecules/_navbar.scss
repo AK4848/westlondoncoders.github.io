@@ -19,9 +19,10 @@
 
 .m-navbar__logo {
   text-align: center;
-  margin: 0;
+  margin: 20px 0;
 
   @media #{$from-medium} {
+    margin: 0;
     a:hover {
       @include link-fade;
     }
@@ -57,7 +58,7 @@
     }
     h2 {
       border-top: 1px solid $color-light-grey;
-      width: 100%;
+      width: 100vw;
     }
     h2:last-child {
       border-bottom: 1px solid $color-light-grey;
